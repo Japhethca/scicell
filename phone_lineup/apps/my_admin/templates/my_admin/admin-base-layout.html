@@ -1,0 +1,27 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{% static 'my_admin/css/styles.css' %}">
+  <title> {% block title %} Phone Lineup Admin {% endblock  %}</title>
+</head>
+<body>
+  {% block navbar %}
+    {% include "my_admin/admin-nav.html" with user=user %}
+  {% endblock %}
+  {% block content %}{% endblock %}
+
+  <!-- scripts -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+  {% block javascript %}
+  {% endblock %}
+</body>
+</html>

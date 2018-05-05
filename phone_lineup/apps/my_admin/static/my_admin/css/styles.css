@@ -1,0 +1,82 @@
+/* admin homepage styles */
+.admin-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+    border-radius: 0.2rem;
+    color: #fff;
+    padding: 0.4rem;
+}
+
+.admin-header h2 {
+    margin: 0.6rem;
+}
+.admin-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin-header .authentication {
+    list-style-type: none;
+    padding-right: 0.6rem;
+    font-size: large;
+}
+
+.admin-header .authentication a {
+    color: yellow;
+}
+
+/* admin login page styles */
+.login-wrapper {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    padding: 1.2rem;
+    width: 20rem;
+    background-color: gainsboro;
+}
+
+.login-title {
+    text-align: center;
+    margin-top: 0.6rem;
+}
+
+.input-field {
+    padding: 0.6rem;
+}
+
+.input-field > input:not([type='checkbox']) {
+    width: 100%;
+    height: 1.7rem;
+    margin-top: 0.3rem;
+    padding-left: 0.2rem;
+    line-height: 1.5rem;
+}
+
+.input-field button {
+    width: 100%;
+    cursor: pointer;
+    background-color: darkblue;
+    color: #fff;
+    padding: 0.6rem;
+    font-size: larger;
+    border-radius: 0.3rem;
+}
+
+.admin-home-title {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.login-wrapper  .auth-failure {
+    width: 100%;
+    text-align: center;
+    color: red;
+}
