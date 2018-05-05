@@ -56,3 +56,7 @@ local_settings.py
 
 # dotenv
 .env
+
+# editor
+.vscode
+.idea
