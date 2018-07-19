@@ -7,8 +7,10 @@ name = "pypi"
 django = "==2.0.5"
 "psycopg2" = "*"
 django-environ = "*"
+"psycopg2-binary" = "*"
 
 [dev-packages]
+"flake8" = "*"
 
 [requires]
 python_version = "3.6"
