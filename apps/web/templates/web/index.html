@@ -1,16 +1,10 @@
+{% extends 'web/layouts/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="{% static 'web/css/styles.css' %}">
-  <title>Document</title>
-</head>
-
-<body>
+{% block styles %}
+  <link rel="stylesheet" type="text/css" href="{% static '/web/css/styles.css' %}">
+{% endblock %}
+{% block main %}
   <div class="main-wrapper">
     <div class="nav-container">
       <a href="" class="site-logo">
@@ -42,7 +36,7 @@
     <div class="container">
       <div class="sidebar-one">
         <h3>Phone Brands</h3>
-        <ul class="phone-brands">
+        <ul class="phone-brands ">
           {% for manufacturer in manufacturers %}
           <li>{{manufacturer.name|title}}</li>
           {% endfor %}
@@ -58,6 +52,7 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione corporis excepturi, sed accusamus aspernatur, repudiandae
           odio quisquam beatae aut a quaerat tempore, tempora expedita maiores officiis. Facere, at pariatur.
+          <span>I am dangerous</span>
         </p>
 
       </div>
@@ -72,5 +67,4 @@
       {% include "web/footer.html" %}
     </div>
   </div>
-</body>
-</html>
+{% endblock %}

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "02973ced864f82785f5a164f8c31960ff99d81dbc82a81bb376eed3423d73c97"
+            "sha256": "d65dbd80392e91793ae6c92e98a141da2feaf546b515773eff766abf14fb4b57"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "dj-database-url": {
+            "hashes": [
+                "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
+                "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"
+            ],
+            "index": "pypi",
+            "version": "==0.5.0"
+        },
         "django": {
             "hashes": [
                 "sha256:26b34f4417aa38d895b6b5307177b51bc3f4d53179d8696a5c19dcb50582523c",
@@ -23,14 +31,6 @@
             ],
             "index": "pypi",
             "version": "==2.0.5"
-        },
-        "django-environ": {
-            "hashes": [
-                "sha256:6c9d87660142608f63ec7d5ce5564c49b603ea8ff25da595fd6098f6dc82afde",
-                "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4"
-            ],
-            "index": "pypi",
-            "version": "==0.4.5"
         },
         "psycopg2": {
             "hashes": [
