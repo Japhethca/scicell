@@ -1,0 +1,29 @@
+services:
+    web:
+        container_name: phonelineup
+        image: phonelineup
+
+        build:
+            context: .
+            dockerfile: .Dockerfile
+        volumes:
+            - .:/usr/app
+        environment:
+            - NODE_ENV=development
+        ports:
+            - "3000:3000"
+        networks:
+            - python-network
+
+    mongodb:
+        container_name: postgres
+        image: postgres
+
+        networks:
+            - python-network
+
+networks:
+  python-network:
+    driver: bridge
+
+

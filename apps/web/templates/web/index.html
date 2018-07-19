@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/styles.css' %}">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <div class="nav-container">
+      <a href="" class="site-logo">
+        Phone Lineup
+      </a>
+      <div class="nav-search">
+        <input type="text" class="search" placeholder="Search for device">
+      </div>
+      <ul class="nav-menus">
+        <li class="menu">
+          <a href="">Menu 1</a>
+          <ul class="dropdown-content">
+            <li>menu 1</li>
+            <li>menu 2</li>
+            <li>menu 3</li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="">Menu 2</a>
+        </li>
+        <li class="menu">
+          <a href="">Menu 3</a>
+        </li>
+        <li class="menu">
+          <a href="">Menu 4</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="sidebar-one">
+        <h3>Phone Brands</h3>
+        <ul class="phone-brands">
+          {% for manufacturer in manufacturers %}
+          <li>{{manufacturer.name|title}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="content-wrapper">
+        <h2>Latest news</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione corporis excepturi, sed accusamus aspernatur, repudiandae
+          odio quisquam beatae aut a quaerat tempore, tempora expedita maiores officiis. Facere, at pariatur.
+        </p>
+        <h2>Latest Phones</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione corporis excepturi, sed accusamus aspernatur, repudiandae
+          odio quisquam beatae aut a quaerat tempore, tempora expedita maiores officiis. Facere, at pariatur.
+        </p>
+
+      </div>
+
+      <div class="sidebar-two">
+        <h3>Latest Comparisons</h3>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur distinctio odit beatae delectus. Nesciunt nemo porro vero
+        possimus optio accusantium laudantium aperiam numquam dolorum, illum est molestiae quis odio animi!
+      </div>
+    </div>
+    <div class="footer">
+      {% include "web/footer.html" %}
+    </div>
+  </div>
+</body>
+</html>
